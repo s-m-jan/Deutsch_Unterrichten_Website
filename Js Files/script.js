@@ -1,6 +1,23 @@
 
 
   //start: Header scripts//
+
+  let headerSearch = document.querySelector("#header-search");
+  window.addEventListener("scroll", (e)=>{
+    if (window.scrollY > 3) {
+        headerSearch.style.height = "70px"
+        headerSearch.style.transition = "height 1s"
+        headerSearch.style.verticalAlign = ""
+    }else{
+        headerSearch.style.height = "45px"
+        headerSearch.style.transition = "height 1s"
+    }
+    
+    
+  })
+
+
+  
   let image = document.querySelector('#nav-image')
   let i = 0;
   setInterval(() => {
