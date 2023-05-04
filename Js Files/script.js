@@ -1,5 +1,7 @@
 
-
+// document.addEventListener("contextmenu", (e)=>{
+//     e.preventDefault()
+// })
   //start: Header scripts//
 
   let headerSearch = document.querySelector("#header-search");
@@ -44,5 +46,29 @@
       }
   }, 7000);
   //end: Header scripts//
+
+  //start : carousel//
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
+
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+  //end : carousel//
 
 
